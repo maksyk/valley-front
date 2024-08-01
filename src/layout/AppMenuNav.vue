@@ -35,10 +35,10 @@ const buttons = [
 
 </script>
 <template>
-  <nav class=" flex items-center justify-center wrapper border-y-[3px] border-l-[3px] border-solid border-[#262626]">
+  <nav class="z-20 flex items-center justify-center wrapper border-y-[3px] border-l-[3px] border-solid border-[#262626]">
     <div
         style="background-image: url('src/assets/1.png');"
-        class="bg-cover bg-center relative button-box items-center flex justify-center cursor-pointer"
+        class="z-50 bg-cover bg-center relative button-box items-center flex justify-center cursor-pointer"
         v-for="btn in buttons">
       <router-link class="w-full h-full" :to="btn.to">
         <div class="h-full w-full flex items-center justify-center">

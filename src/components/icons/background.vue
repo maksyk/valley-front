@@ -1,8 +1,8 @@
 <script setup lang="ts">
 </script>
 <template>
-<svg width="375" height="701" viewBox="0 0 375 701" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="375" height="701" fill="url(#pattern0_55_13641)"/>
+<svg width="419" height="907" viewBox="0 0 419 907" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="419" height="907" fill="url(#pattern0_55_13641)"/>
 <defs>
 <pattern id="pattern0_55_13641" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_55_13641" transform="matrix(0.00216512 0 0 0.00142213 -0.582558 -0.103341)"/>
