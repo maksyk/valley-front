@@ -3,6 +3,7 @@ import AppHeader from "../layout/AppHeader.vue";
 import Minting from "../components/svg/minting.vue";
 import ThcButton from "../components/buttons/thcButton.vue";
 import {buttons} from "./configs.ts";
+import Timer from "../components/Timer.vue";
 </script>
 <template>
   <AppHeader/>
