@@ -34,8 +34,9 @@ const buttons = [
 ]
 </script>
 <template>
-  <nav class="z-20 flex items-center justify-center wrapper border-y-[3px] border-l-[3px] border-solid border-[#262626]">
-    <div
+  <nav class="fixed inherit w-full left-0 bottom-0 z-[100]">
+    <div class="flex items-center justify-center wrapper border-y-[3px] border-l-[3px] border-solid border-[#262626]">
+      <div
         style="background-image: url('src/assets/1.png');"
         class="z-50 bg-cover bg-center relative button-box items-center flex justify-center cursor-pointer"
         v-for="btn in buttons">
@@ -47,6 +48,7 @@ const buttons = [
           {{ btn.name }}
         </div>
       </router-link>
+    </div>
     </div>
   </nav>
 </template>
