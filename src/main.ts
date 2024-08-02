@@ -14,6 +14,7 @@ app.use(pinia);
 app.use(NumberAnimation)
 pinia.use(piniaPluginPersistedstate);
 app.component('vue-countdown', VueCountdown);
+
 app.use(Router);
 
 app.mount('#app')
