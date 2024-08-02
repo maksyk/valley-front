@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppHeader from "../layout/AppHeader.vue";
-import Minting from "../components/icons/minting.vue";
+import Minting from "../components/svg/minting.vue";
 import ThcButton from "../components/buttons/thcButton.vue";
 import {buttons} from "./configs.ts";
 </script>

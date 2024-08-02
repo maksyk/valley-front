@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Wallet from "../icons/wallet.vue";
+import Wallet from "../svg/wallet.vue";
 </script>
 <template>
   <button

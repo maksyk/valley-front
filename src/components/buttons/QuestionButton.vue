@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Question from "../icons/question.vue";
+import Question from "../svg/question.vue";
 </script>
 <template>
   <button class="

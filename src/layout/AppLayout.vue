@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppMenuNav from "./AppMenuNav.vue";
-import Background from "../components/icons/background.vue";
+import Background from "../components/svg/background.vue";
 </script>
 <template>
   <div class="absolute left-0 top-0 right-0 bottom-0 overflow-hidden" @click="() => null">

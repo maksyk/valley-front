@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import home from "../components/icons/home.vue";
-import collect from "../components/icons/collect.vue";
-import leaders from "../components/icons/leaders.vue";
-import invite from "../components/icons/invite.vue";
-import shop from "../components/icons/shop.vue";
+import home from "../components/svg/home.vue";
+import collect from "../components/svg/collect.vue";
+import leaders from "../components/svg/leaders.vue";
+import invite from "../components/svg/invite.vue";
+import shop from "../components/svg/shop.vue";
 
 const buttons = [
   {
