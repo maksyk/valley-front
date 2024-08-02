@@ -4,7 +4,7 @@ import WalletButton from "../components/buttons/WalletButton.vue";
 import QuestionButton from "../components/buttons/QuestionButton.vue";
 </script>
 <template>
-  <header class="flex gap-3 z-20 p-[5px]">
+  <header class="flex gap-[18px] z-20">
     <ZazaButton/>
     <WalletButton/>
     <QuestionButton/>

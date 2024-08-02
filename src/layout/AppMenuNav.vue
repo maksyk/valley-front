@@ -32,7 +32,6 @@ const buttons = [
     icon: shop,
   },
 ]
-
 </script>
 <template>
   <nav class="z-20 flex items-center justify-center wrapper border-y-[3px] border-l-[3px] border-solid border-[#262626]">
