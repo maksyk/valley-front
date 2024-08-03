@@ -8,7 +8,7 @@ const routes: RouteRecordRaw[] = [
     //     component: () => import("../pages/home/HomePage.vue"),
     // },
     {
-        path: "/home",
+        path: "/home_1",
         name: "home_1",
         component: () => import("../pages/home/HomePage.vue"),
     },
@@ -23,6 +23,7 @@ const routes: RouteRecordRaw[] = [
         component: () => import("../pages/approve/ApprovePage.vue"),
     },
 ];
+
 
 const router = createRouter({
     history: createWebHistory(),
