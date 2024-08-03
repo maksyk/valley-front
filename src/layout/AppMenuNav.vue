@@ -4,6 +4,7 @@ import collect from "../components/svg/collect.vue";
 import leaders from "../components/svg/leaders.vue";
 import invite from "../components/svg/invite.vue";
 import shop from "../components/svg/shop.vue";
+import {getUrlPath} from "../core/utils.ts";
 
 const buttons = [
   {
@@ -37,7 +38,7 @@ const buttons = [
   <nav class="fixed inherit w-full left-0 bottom-0 z-[100]">
     <div class="flex items-center justify-center wrapper border-y-[3px] border-l-[3px] border-solid border-[#262626]">
       <div
-        style="background-image: url('src/assets/1.png');"
+        :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
         class="z-50 bg-cover bg-center relative button-box items-center flex justify-center cursor-pointer"
         v-for="btn in buttons">
       <router-link class="w-full h-full" :to="btn.to">
