@@ -2,9 +2,14 @@ import type { RouteRecordRaw } from 'vue-router';
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
+    // {
+    //     path: "/",
+    //     name: "home",
+    //     component: () => import("../pages/home/HomePage.vue"),
+    // },
     {
-        path: "/",
-        name: "home",
+        path: "/home",
+        name: "home_1",
         component: () => import("../pages/home/HomePage.vue"),
     },
     {

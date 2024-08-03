@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import BackgroundPool from "../../../components/svg/backgroundPool.vue";
 </script>
 <template>
