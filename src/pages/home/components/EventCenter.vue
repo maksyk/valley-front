@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import {getUrlPath} from "../../../core/utils.ts";
 </script>
 <template>
   <div class="flex pt-[5px]">
-    <div style="background-image: url('src/assets/1.png');"
+    <div :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
          class="
       text-style
       rounded-l-[5px]

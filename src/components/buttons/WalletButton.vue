@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import Wallet from "../svg/wallet.vue";
+import {getUrlPath} from "../../core/utils.ts";
 </script>
 <template>
   <button
-      style="background-image: url('src/assets/1.png');"
+      :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
       class="
       text-style
       rounded-[5px]

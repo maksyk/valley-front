@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {DefineComponent, PropType} from "vue";
+import {getUrlPath} from "../../core/utils.ts";
 
 defineProps({
   icon: {
@@ -34,7 +35,7 @@ defineProps({
       px-[6px]
       border-solid
       border-[#262626]"
-    :style="`background-image: url('src/assets/1.png');` + style">
+    :style="`background-image: url('${getUrlPath()}/assets/1.png');` + style">
   <component :is="icon"/>
   <div class="text-style">
     {{content}}

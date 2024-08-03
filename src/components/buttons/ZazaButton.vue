@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import {getUrlPath} from "../../core/utils.ts";
 </script>
 <template>
   <button
-      style="background-image: url('src/assets/2.png');"
+      :style="`background-image: url('${getUrlPath()}/assets/2.png');`"
       class="
       text-style
       rounded-[5px]

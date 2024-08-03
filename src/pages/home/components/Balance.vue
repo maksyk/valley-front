@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import Leaf from "../../../components/svg/leaf.vue";
 import Pineapple from "../../../components/svg/pineapple.vue";
+import {getUrlPath} from "../../../core/utils.ts";
 </script>
 <template>
   <div class="relative w-full pt-[5px]">
     <div class="absolute z-20 header-balance top-0">
       Total balance
     </div>
-    <div style="background-image: url('src/assets/1.png');"
-         class="
+    <div
+        :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
+        class="
       rounded-[5px]
       text-style
       z-10
