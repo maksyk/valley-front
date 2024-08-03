@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProgressPar from "../components/ProgressPar.vue";
+import ProgressPar from "../../components/ProgressPar.vue";
 import {onMounted, ref} from "vue";
 
 let TIMER_LIMIT = ref<number>(100)

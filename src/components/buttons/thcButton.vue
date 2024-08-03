@@ -19,7 +19,6 @@ defineProps({
 </script>
 <template>
 <div class="
-      button
       text-style
       z-10
       bg-cover

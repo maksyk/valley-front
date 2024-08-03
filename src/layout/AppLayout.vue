@@ -8,7 +8,7 @@ const route = useRoute()
     <div class="relative max-w-[480px] mx-auto min-h-[100dvh] overflow-hidden">
       <component :is="backgrounds[route.name as any]" class="absolute z-[-1] flex h-dvh w-full"/>
       <slot name="background"></slot>
-      <div class="h-[calc(100vh-93px)] z-10 relative overflow-y-auto p-[10px]">
+      <div class="h-[calc(100vh-93px)] z-10 relative overflow-y-auto">
         <slot/>
       </div>
     </div>

@@ -1,7 +1,7 @@
-import battleYellow from "../components/svg/battleYellow.vue";
-import battleGreen from "../components/svg/battleGrean.vue";
-import flask from "../components/svg/flask.vue";
-import locked from "../components/svg/locked.vue";
+import battleYellow from "../../components/svg/battleYellow.vue";
+import battleGreen from "../../components/svg/battleGrean.vue";
+import flask from "../../components/svg/flask.vue";
+import locked from "../../components/svg/locked.vue";
 
 
 export const buttons = [
