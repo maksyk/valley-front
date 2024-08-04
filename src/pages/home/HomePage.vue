@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AppHeader from "../../layout/AppHeader.vue";
-import Minting from "./components/minting.vue";
+import Minting from "./components/Minting.vue";
 import ThcButton from "../../components/buttons/thcButton.vue";
 import AppMenuNav from "../../layout/AppMenuNav.vue";
 import Boost from "./components/Boost.vue";

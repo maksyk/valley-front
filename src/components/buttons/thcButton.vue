@@ -43,7 +43,6 @@ defineProps({
 </div>
 </template>
 <style scoped>
-
 .text-style {
   font: 400 5px / 2 "Press Start 2P", sans-serif;
   letter-spacing: -0.02em;

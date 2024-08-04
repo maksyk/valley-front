@@ -2,6 +2,7 @@
 import Leaf from "../../../components/svg/leaf.vue";
 import Pineapple from "../../../components/svg/pineapple.vue";
 import {getUrlPath} from "../../../core/utils.ts";
+import NumberAnimation from "../../../components/NumberAnimation.vue";
 </script>
 <template>
   <div class="relative w-full pt-[5px]">
@@ -34,10 +35,10 @@ import {getUrlPath} from "../../../core/utils.ts";
       </div>
       <div class="flex flex-col">
         <div class="text-balance p-[3px]">
-          622.32
+          <NumberAnimation :to="622.32" :fractionDigits="2"/>
         </div>
-        <div class="under-balance p-[3px]">
-          1424.0123
+        <div class="p-[3px]">
+          <NumberAnimation :to="1424.0123" :fractionDigits="4" :style="'under-balance'"/>
         </div>
       </div>
     </div>

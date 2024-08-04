@@ -15,17 +15,25 @@ defineProps({
   duration: {
     type: Number as PropType<number>,
     default: 1
+  },
+  fractionDigits: {
+    type: Number as PropType<number>,
+    default: 1
+  },
+  style: {
+    type: String as PropType<string>,
+    default: ''
   }
 })
 </script>
 <template>
-  <div class="text-style">
+  <div :class="style ? style : 'text-style'">
     <NumberAnimation
         tag="div"
         ref="number"
         :from="from"
         :to="to"
-        :format="(number: number) => number.toFixed(0)"
+        :format="(number: number) => number.toFixed(fractionDigits)"
         :duration="duration"
         autoplay
         easing="linear"
