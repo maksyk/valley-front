@@ -1,10 +1,20 @@
 <script setup lang="ts">
+import TransitionBounce from "../../../components/transitions/TransitionBounce.vue";
 import {getUrlPath} from "../../../core/utils.ts";
+import {ref} from "vue";
+
+const isA = ref(false)
+setTimeout(() => {
+  isA.value = true
+
+}, 300)
+
 </script>
 <template>
-  <div class="flex pt-[5px]">
+  <div class="flex pt-[5px] w-[25%]">
     <div :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
          class="
+         w-full
          shadow-md
       text-style
       rounded-l-[5px]
@@ -24,9 +34,11 @@ import {getUrlPath} from "../../../core/utils.ts";
       border-l-[3px]
       border-solid
       border-[#262626]">
-      <div class="text-event-center">
-        EVENT CENTER
-      </div>
+      <TransitionBounce>
+        <div class="text-event-center" v-if="isA">
+          EVENT CENTER
+        </div>
+      </TransitionBounce>
     </div>
   </div>
 </template>

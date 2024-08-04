@@ -5,7 +5,7 @@ import {getUrlPath} from "../../../core/utils.ts";
 import NumberAnimation from "../../../components/NumberAnimation.vue";
 </script>
 <template>
-  <div class="relative w-full pt-[5px]">
+  <div class="relative w-[60%] pt-[5px]">
     <div class="absolute z-20 header-balance top-0 px-[10px]">
       Total balance
     </div>

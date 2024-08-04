@@ -12,12 +12,13 @@ import {buttons} from "./configs.ts";
 import {webApp} from "../../core/telegram/initWebApp.ts";
 import {DEBUG} from "../../config.ts";
 
+
 if (!DEBUG) webApp.BackButton.isVisible = false;
 
 </script>
 <template>
   <AppHeader/>
-  <div class="flex justify-between gap-[6px] mt-[10px] p-[10px]">
+  <div class="flex justify-between gap-[6px] mt-[10px] px-[10px]">
     <div class="relative ">
       <div class="pt-[5px]">
         <div class="absolute z-20 top-0 px-[10px] thc-header">
@@ -33,7 +34,7 @@ if (!DEBUG) webApp.BackButton.isVisible = false;
       <Minting/>
     </div>
   </div>
-  <div class="flex flex-row gap-[6px] mt-[5px]">
+  <div class="flex flex-row gap-[6px] py-[5px]">
     <Boost/>
     <Balance/>
     <EventCenter/>
