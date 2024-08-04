@@ -38,7 +38,7 @@ if (!DEBUG) webApp.BackButton.isVisible = false;
     <Balance/>
     <EventCenter/>
   </div>
-  <div class="flex flex-row gap-[6px] mt-[10px] px-[10px] flex-1 h-[50px]">
+  <div class="flex flex-row gap-[6px] mt-[10px] px-[10px] flex-1 h-[156px] ">
     <Pool/>
     <Seeding/>
   </div>
