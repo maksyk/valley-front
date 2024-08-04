@@ -46,7 +46,6 @@ onMounted(setLoading)
         </div>
       </div>
     </div>
-
   </div>
 </template>
 <style >

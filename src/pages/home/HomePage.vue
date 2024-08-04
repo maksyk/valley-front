@@ -50,7 +50,6 @@ if (!DEBUG) webApp.BackButton.isVisible = false;
   justify-content: flex-start;
   flex-direction: column;
 }
-
 .thc-header {
   font: 400 12px "Press Start 2P", sans-serif;
   letter-spacing: -0.01em;
