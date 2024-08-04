@@ -5,7 +5,7 @@ import {getUrlPath} from "../../../core/utils.ts";
   <div class="flex border-[3px] border-solid border-[#262626] rounded-[5px] shadow-md w-[25%]">
     <div
         :style="`background-image: url('${getUrlPath()}/assets/6.png');`"
-        class="bg-cover bg-center rounded-[10px] w-full h-full">
+        class="bg-cover bg-center w-full h-full rounded-[2px]">
     </div>
   </div>
 </template>
