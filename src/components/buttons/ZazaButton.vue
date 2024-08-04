@@ -5,6 +5,7 @@ import {getUrlPath} from "../../core/utils.ts";
   <button
       :style="`background-image: url('${getUrlPath()}/assets/2.png');`"
       class="
+      shadow-md
       text-style
       rounded-[5px]
       z-10

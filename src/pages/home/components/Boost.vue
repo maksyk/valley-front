@@ -6,6 +6,7 @@ import {getUrlPath} from "../../../core/utils.ts";
     <div
         :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
         class="
+        shadow-md
       rounded-r-[5px]
       text-style
       z-10

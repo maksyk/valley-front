@@ -6,11 +6,23 @@ defineProps({
   value: {
     type: Number as PropType<number>,
     default: 10
+  },
+  borderSize: {
+    type: Number as PropType<number>,
+    default: 3
+  },
+  rounded: {
+    type: Number as PropType<number>,
+    default: 5
+  },
+  padding: {
+    type: Number as PropType<number>,
+    default: 5
   }
 })
 </script>
 <template>
-  <div class="border-[3px] border-black p-[5px] bg-white rounded-[5px]">
+  <div :class="`border-[${borderSize}px] border-black p-[${padding}px] bg-white rounded-[${rounded}px]`">
     <ProgressBar color="#36b546" :value="value" :showValue="false"/>
   </div>
 </template>

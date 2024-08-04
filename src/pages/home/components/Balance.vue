@@ -6,12 +6,13 @@ import NumberAnimation from "../../../components/NumberAnimation.vue";
 </script>
 <template>
   <div class="relative w-full pt-[5px]">
-    <div class="absolute z-20 header-balance top-0">
+    <div class="absolute z-20 header-balance top-0 px-[10px]">
       Total balance
     </div>
     <div
         :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
         class="
+        shadow-md
       rounded-[5px]
       text-style
       z-10

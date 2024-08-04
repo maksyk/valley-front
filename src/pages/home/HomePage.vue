@@ -18,10 +18,17 @@ if (!DEBUG) webApp.BackButton.isVisible = false;
 <template>
   <AppHeader/>
   <div class="flex justify-between gap-[6px] mt-[10px] p-[10px]">
-    <div class="wrapper-buttons flex items-center rounded-[10px] border-[3px] border-solid border-[#262626]">
-      <ThcButton :icon="btn.icon" :content="btn.content" :style="btn.style" v-for="btn in buttons"/>
+    <div class="relative">
+      <div class="pt-[5px]">
+        <div class="absolute z-20 top-0 px-[10px] thc-header">
+          THC
+        </div>
+        <div class="wrapper-buttons flex items-center rounded-[10px] border-[3px] border-solid border-[#262626] shadow-md">
+          <ThcButton :icon="btn.icon" :content="btn.content" :style="btn.style" v-for="btn in buttons"/>
+        </div>
+      </div>
     </div>
-    <div class="flex-1">
+    <div class="relative flex-1">
       <Minting/>
     </div>
   </div>
@@ -41,5 +48,13 @@ if (!DEBUG) webApp.BackButton.isVisible = false;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.thc-header {
+  font: 400 12px "Press Start 2P", sans-serif;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #80ff00;
+  text-shadow: 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.4), 0 2px 3px rgba(0, 0, 0, 0.8);
 }
 </style>

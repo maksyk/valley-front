@@ -3,6 +3,7 @@ import Question from "../svg/question.vue";
 </script>
 <template>
   <button class="
+  shadow-md
   bg-[#5f7189]
   text-style
   rounded-[5px]
