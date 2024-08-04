@@ -1,13 +1,11 @@
 <script setup lang="ts">
-
+import TransitionBounce from "../../../components/transitions/TransitionBounce.vue";
 import {getUrlPath} from "../../../core/utils.ts";
 import {ref} from "vue";
-import TransitionFromRight from "../../../components/transitions/TransitionBounce.vue";
-import TransitionBounce from "../../../components/transitions/TransitionBounce.vue";
 
-const isA = ref(false)
+const isBounce = ref(false)
 setTimeout(() => {
-  isA.value = true
+  isBounce.value = true
 
 }, 300)
 </script>
@@ -36,9 +34,8 @@ setTimeout(() => {
         border-r-[3px]
         border-solid
         border-[#262626]">
-
       <TransitionBounce>
-        <div class="text-boost" v-if="isA">
+        <div class="text-boost" v-if="isBounce">
           BOOST
         </div>
       </TransitionBounce>

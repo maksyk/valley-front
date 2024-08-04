@@ -24,8 +24,7 @@ if (!DEBUG) webApp.BackButton.isVisible = false;
         <div class="absolute z-20 top-0 px-[10px] thc-header">
           THC
         </div>
-        <div
-            class="wrapper-buttons flex items-center rounded-[10px] border-[3px] border-solid border-[#262626] shadow-md">
+        <div class="wrapper-buttons flex items-center rounded-[10px] border-[3px] border-solid border-[#262626] shadow-md">
           <ThcButton :icon="btn.icon" :content="btn.content" :style="btn.style" v-for="btn in buttons"/>
         </div>
       </div>

@@ -3,12 +3,11 @@ import TransitionBounce from "../../../components/transitions/TransitionBounce.v
 import {getUrlPath} from "../../../core/utils.ts";
 import {ref} from "vue";
 
-const isA = ref(false)
+const isBounce = ref(false)
 setTimeout(() => {
-  isA.value = true
+  isBounce.value = true
 
 }, 300)
-
 </script>
 <template>
   <div class="flex pt-[5px] w-[25%]">
@@ -35,7 +34,7 @@ setTimeout(() => {
       border-solid
       border-[#262626]">
       <TransitionBounce>
-        <div class="text-event-center" v-if="isA">
+        <div class="text-event-center" v-if="isBounce">
           EVENT CENTER
         </div>
       </TransitionBounce>
