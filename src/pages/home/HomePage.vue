@@ -22,7 +22,7 @@ if (!DEBUG) webApp.BackButton.isVisible = false;
       <ThcButton :icon="btn.icon" :content="btn.content" :style="btn.style" v-for="btn in buttons"/>
     </div>
     <div class="border-[3px] border-solid flex-1 border-[#262626] rounded-[12px]">
-      <Minting />
+      <Minting/>
     </div>
   </div>
   <div class="flex flex-row gap-[6px] mt-[5px]">
