@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import {getUrlPath} from "../../../core/utils.ts";
-
 </script>
 <template>
   <div class="flex border-[3px] border-solid border-[#262626] rounded-[5px] w-[30%]">
