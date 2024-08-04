@@ -50,19 +50,6 @@ const buttons = [
           </div>
         </router-link>
       </div>
-<!--      <div-->
-<!--        :style="`background-image: url('${getUrlPath()}/assets/1.png');`"-->
-<!--        class="z-50 bg-cover bg-center relative button-box items-center flex justify-center cursor-pointer"-->
-<!--        v-for="btn in buttons">-->
-<!--      <router-link class="w-full h-full" :to="btn.to">-->
-<!--        <div class="h-full w-full flex items-center justify-center">-->
-<!--          <component :is="btn.icon"/>-->
-<!--        </div>-->
-<!--        <div class="text-style t h-[5%] items-center flex justify-center">-->
-<!--          {{ btn.name }}-->
-<!--        </div>-->
-<!--      </router-link>-->
-<!--    </div>-->
     </div>
   </nav>
 </template>

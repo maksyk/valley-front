@@ -15,7 +15,7 @@ if (!DEBUG) {
     // @ts-ignore
     webApp = Telegram.WebApp;
     webApp.setHeaderColor('#3978A8');
-    webApp.setBackgroundColor('#A8F5FF');
+    webApp.setBackgroundColor('#394777');
     webApp.isClosingConfirmationEnabled = true;
     webApp.expand()
 } else {

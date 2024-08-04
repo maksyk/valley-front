@@ -6,7 +6,7 @@ const route = useRoute()
 <template>
   <div class="absolute left-0 top-0 right-0 bottom-0 overflow-hidden" @click="() => null">
     <div class="relative max-w-[480px] mx-auto min-h-[100dvh] overflow-hidden">
-      <component :is="backgrounds[route.name as any]" class="absolute z-[-2] flex h-dvh w-full"/>
+      <component :is="backgrounds[route.name as any]" class="absolute z-[-1] flex h-dvh w-full"/>
       <div class="h-[calc(100dvh-94px)] relative overflow-y-auto">
         <slot/>
       </div>

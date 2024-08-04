@@ -10,7 +10,6 @@ defineProps({
 const formatNumber = (num: number) => (num < 10 ? `0${num}` : num);
 const emit = defineEmits(["end"]);
 const handler = () => emit("end");
-
 </script>
 <template>
   <vue-countdown :time="time" v-slot="{ hours, minutes, seconds }" @end="handler">
