@@ -36,20 +36,33 @@ const buttons = [
 </script>
 <template>
   <nav class="fixed inherit w-full left-0 bottom-0 z-[100]">
-    <div class="flex items-center justify-center wrapper border-y-[3px] shadow-md border-l-[3px] border-solid border-[#262626]">
+    <div class="grid grid-cols-5 items-center justify-center wrapper border-y-[3px] shadow-md border-l-[3px] border-solid border-[#262626]">
       <div
-        :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
-        class="z-50 bg-cover bg-center relative button-box items-center flex justify-center cursor-pointer"
-        v-for="btn in buttons">
-      <router-link class="w-full h-full" :to="btn.to">
-        <div class="h-full w-full flex items-center justify-center">
-          <component :is="btn.icon"/>
-        </div>
-        <div class="text-style t h-[5%] items-center flex justify-center">
-          {{ btn.name }}
-        </div>
-      </router-link>
-    </div>
+          :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
+          class="z-50 bg-cover bg-center relative button-box h-[88px] items-center flex justify-center cursor-pointer"
+          v-for="btn in buttons">
+        <router-link class="w-full h-full" :to="btn.to">
+          <div class="h-full w-full flex items-center justify-center">
+            <component :is="btn.icon"/>
+          </div>
+          <div class="text-style t h-[5%] items-center flex justify-center">
+            {{ btn.name }}
+          </div>
+        </router-link>
+      </div>
+<!--      <div-->
+<!--        :style="`background-image: url('${getUrlPath()}/assets/1.png');`"-->
+<!--        class="z-50 bg-cover bg-center relative button-box items-center flex justify-center cursor-pointer"-->
+<!--        v-for="btn in buttons">-->
+<!--      <router-link class="w-full h-full" :to="btn.to">-->
+<!--        <div class="h-full w-full flex items-center justify-center">-->
+<!--          <component :is="btn.icon"/>-->
+<!--        </div>-->
+<!--        <div class="text-style t h-[5%] items-center flex justify-center">-->
+<!--          {{ btn.name }}-->
+<!--        </div>-->
+<!--      </router-link>-->
+<!--    </div>-->
     </div>
   </nav>
 </template>
@@ -60,8 +73,6 @@ const buttons = [
 .button-box {
   border-right: 3px solid #262626;
   padding: 4px 3px 16px 3px;
-  width: 375px;
-  height: 82px;
 }
 .text-style {
   font: 400 8px "Press Start 2P", sans-serif;
