@@ -1,6 +1,6 @@
-import Background from "../components/svg/backgroundHome.vue";
-import BackgroundLoading from "../components/svg/backgroundLoading.vue";
-import BackgroundApprove from "../components/svg/backgroundApprove.vue";
+import Background from "../components/backgrounds/backgroundHome.vue";
+import BackgroundLoading from "../components/backgrounds/backgroundLoading.vue";
+import BackgroundApprove from "../components/backgrounds/backgroundApprove.vue";
 
 export const backgrounds = {
   home: Background,
