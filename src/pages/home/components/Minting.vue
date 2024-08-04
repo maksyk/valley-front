@@ -22,10 +22,10 @@ onMounted(setLoading)
     </div>
     <div
         :style="`background-image: url('${getUrlPath()}/assets/7.png');`"
-        class="absolute bg-cover bg-center w-full border-[3px] border-solid border-[#262626] rounded-[12px] shadow-md h-full">
+        class="bg-cover bg-center w-full border-[3px] border-solid border-[#262626] rounded-[12px] shadow-md h-full">
     </div>
 
-    <div class="w-full p-[15px] flex justify-between z-30">
+    <div class="absolute top-0 w-full p-[20px] flex justify-between z-30">
       <div class="lemon z-20">
         Lemon haze
       </div>
@@ -46,6 +46,7 @@ onMounted(setLoading)
         </div>
       </div>
     </div>
+
   </div>
 </template>
 <style >
