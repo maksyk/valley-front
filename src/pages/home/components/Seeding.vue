@@ -14,7 +14,7 @@ import ClaimButton from "../../../components/buttons/ClaimButton.vue";
 
       <div class="absolute top-0 bottom-0 w-full flex flex-col">
         <div class="flex justify-center w-full items-center">
-          <div class="text-seeding p-[9px]">
+          <div class="text-seeding pt-[15px]">
             Seeding
           </div>
         </div>
