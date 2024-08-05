@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import {getUrlPath} from "../../../core/utils.ts";
+import ClaimButton from "../../../components/buttons/ClaimButton.vue";
 </script>
 <template>
   <div class="relative border-[3px] border-solid border-[#262626] rounded-[5px] shadow-md w-full h-full">
@@ -29,7 +30,9 @@ import {getUrlPath} from "../../../core/utils.ts";
         </div>
       </div>
 
-<!--      TODO ClaimButton-->
+      <div class="flex w-full px-[20px]">
+        <ClaimButton/>
+      </div>
     </div>
   </div>
 </template>
