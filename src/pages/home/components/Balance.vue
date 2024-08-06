@@ -13,23 +13,23 @@ import NumberAnimation from "../../../components/NumberAnimation.vue";
         :style="`background-image: url('${getUrlPath()}/assets/1.png');`"
         class="
         shadow-md
-      rounded-[5px]
-      text-style
-      z-10
-      bg-cover
-      bg-center
-      relative
-      items-center
-      flex
-      flex-row
-      justify-start
-      cursor-pointer
-      w-full
-      py-[7px]
-      px-[6px]
-      border-[3px]
-      border-solid
-      border-[#262626]">
+        rounded-[5px]
+        text-style
+        z-10
+        bg-cover
+        bg-center
+        relative
+        items-center
+        flex
+        flex-row
+        justify-start
+        cursor-pointer
+        w-full
+        py-[7px]
+        px-[6px]
+        border-[3px]
+        border-solid
+        border-[#262626]">`
       <div class="flex flex-col pl-[10px]">
         <leaf/>
         <pineapple/>
