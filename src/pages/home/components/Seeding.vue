@@ -2,8 +2,8 @@
 import {getUrlPath} from "../../../core/utils.ts";
 import ClaimButton from "../../../components/buttons/MainButton.vue";
 import Timer from "../../../components/Timer.vue";
-import {ref} from "vue";
 import NumberAnimation from "../../../components/NumberAnimation.vue";
+import {ref} from "vue";
 
 const time = ref(10000)
 const isTimer = ref<boolean>(true);

@@ -6,7 +6,7 @@ import NumberAnimation from "../../../components/NumberAnimation.vue";
 </script>
 <template>
   <div class="relative w-[60%] pt-[5px]">
-    <div class="absolute z-20 header-balance top-0 px-[10px]">
+    <div class="absolute z-20 header-balance top-0 px-[7px]">
       Total balance
     </div>
     <div
@@ -47,7 +47,7 @@ import NumberAnimation from "../../../components/NumberAnimation.vue";
 </template>
 <style scoped>
 .header-balance {
-  font: 400 8px / 1.66667 "Press Start 2P", sans-serif;
+  font: 400 9px / 1.66667 "Press Start 2P", sans-serif;
   letter-spacing: -0.02em;
   text-align: center;
   color: #c6c6c6;

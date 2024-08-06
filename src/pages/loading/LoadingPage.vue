@@ -3,8 +3,9 @@ import ProgressPar from "../../components/ProgressPar.vue";
 import {onMounted, ref} from "vue";
 import {useRouter} from "vue-router";
 import {webApp} from "../../core/telegram/initWebApp.ts";
+import {DEBUG} from "../../config.ts";
 
-webApp.setHeaderColor('#2A4C3B');
+if (!DEBUG)  webApp.setHeaderColor('#2A4C3B');
 
 let TIMER_LIMIT = ref<number>(100)
 let TIMER_VALUE = ref<number>(0)

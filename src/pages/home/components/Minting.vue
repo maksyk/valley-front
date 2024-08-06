@@ -48,7 +48,7 @@ onMounted(setLoading)
 </template>
 <style >
 .header-minting {
-  font: 400 8px / 1.66667 "Press Start 2P", sans-serif;
+  font: 400 9px / 1.66667 "Press Start 2P", sans-serif;
   letter-spacing: -0.02em;
   text-align: center;
   color: #c6c6c6;
