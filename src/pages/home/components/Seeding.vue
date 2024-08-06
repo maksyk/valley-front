@@ -3,9 +3,17 @@ import {getUrlPath} from "../../../core/utils.ts";
 import ClaimButton from "../../../components/buttons/MainButton.vue";
 import Timer from "../../../components/Timer.vue";
 import {ref} from "vue";
+import NumberAnimation from "../../../components/NumberAnimation.vue";
 
 const time = ref(10000)
 const isTimer = ref<boolean>(true);
+const growBalance = ref<number>(0);
+
+function clickClaim() {
+  if (isTimer.value) return;
+  isTimer.value = true;
+  growBalance.value += 1000;
+}
 
 </script>
 <template>
@@ -33,7 +41,7 @@ const isTimer = ref<boolean>(true);
           </div>
           <div class="flex flex-col w-[50%]">
             <div class="text-main flex justify-end">
-              0
+              <NumberAnimation :to="growBalance" :fractionDigits="0"/>
             </div>
             <div class="text-second flex justify-end py-[5px]">
               Max: 1000
@@ -41,7 +49,7 @@ const isTimer = ref<boolean>(true);
           </div>
         </div>
         <div class="flex w-full px-[20px] pb-[20px]">
-          <ClaimButton :background="isTimer ? 'grey' : 'green'">
+          <ClaimButton :background="isTimer ? 'grey' : 'green'" @click="clickClaim()">
             <Timer :time="time" v-if="isTimer" @end="(e: any) => isTimer = e"/>
             <div class="text-claim" v-else>
               Claim
