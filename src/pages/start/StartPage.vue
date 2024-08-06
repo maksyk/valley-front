@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import MainButton from "../../components/buttons/MainButton.vue";
 import {useRouter} from "vue-router";
+import {webApp} from "../../core/telegram/initWebApp.ts";
+webApp.setHeaderColor('#2A4C3B');
 const router = useRouter()
 </script>
 <template>

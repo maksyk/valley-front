@@ -12,7 +12,7 @@ import {buttons} from "./configs.ts";
 import {webApp} from "../../core/telegram/initWebApp.ts";
 import {DEBUG} from "../../config.ts";
 
-
+webApp.setHeaderColor('#394777');
 if (!DEBUG) webApp.BackButton.isVisible = false;
 
 </script>

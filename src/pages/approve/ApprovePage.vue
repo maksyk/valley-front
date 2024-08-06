@@ -7,7 +7,8 @@ import {sliders} from "./configs.ts";
 import PixelCarousel from "./components/PixelCarousel.vue";
 import MainButton from "../../components/buttons/MainButton.vue";
 import {useRouter} from "vue-router";
-
+import {webApp} from "../../core/telegram/initWebApp.ts";
+webApp.setHeaderColor('#2A4C3B');
 let next = ref<number>(0);
 const isBounce = ref(false);
 const router = useRouter();
