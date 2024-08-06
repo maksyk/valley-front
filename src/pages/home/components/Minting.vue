@@ -20,11 +20,9 @@ onMounted(setLoading)
     <div class="absolute top-0 header-minting px-[10px] z-20">
       Minting
     </div>
-    <div
-        :style="`background-image: url('${getUrlPath()}/assets/7.png');`"
+    <div :style="`background-image: url('${getUrlPath()}/assets/7.png');`"
         class="bg-cover bg-center w-full border-[3px] border-solid border-[#262626] rounded-[12px] shadow-md h-full">
     </div>
-
     <div class="absolute top-0 w-full p-[20px] flex justify-between z-30">
       <div class="lemon z-20">
         Lemon haze

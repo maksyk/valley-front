@@ -5,9 +5,10 @@ import Timer from "../../../components/Timer.vue";
 import {ref} from "vue";
 
 const time = ref(10000)
+const isTimer = ref<boolean>(true);
+
 </script>
 <template>
-
   <div class="relative pt-[5px] w-full">
     <div class="absolute top-0  header-buds pl-[7px]">
       BUDS Miner
@@ -40,8 +41,8 @@ const time = ref(10000)
           </div>
         </div>
         <div class="flex w-full px-[20px] pb-[20px]">
-          <ClaimButton>
-            <Timer :time="time" v-if="time"/>
+          <ClaimButton :background="isTimer ? 'grey' : 'green'">
+            <Timer :time="time" v-if="isTimer" @end="(e: any) => isTimer = e"/>
             <div class="text-claim" v-else>
               Claim
             </div>
