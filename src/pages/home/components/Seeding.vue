@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import {getUrlPath} from "../../../core/utils.ts";
-import ClaimButton from "../../../components/buttons/ClaimButton.vue";
+import ClaimButton from "../../../components/buttons/MainButton.vue";
+import Timer from "../../../components/Timer.vue";
+import {ref} from "vue";
+
+const time = ref(10000)
 </script>
 <template>
 
@@ -11,7 +15,6 @@ import ClaimButton from "../../../components/buttons/ClaimButton.vue";
     <div class="border-[3px] border-solid border-[#262626] rounded-[5px] shadow-md w-full h-full">
       <div :style="`background-image: url('${getUrlPath()}/assets/5.png');`"
            class="bg-contain bg-center w-full h-full rounded-[2px]"></div>
-
       <div class="absolute top-0 bottom-0 w-full flex flex-col">
         <div class="flex justify-center w-full items-center">
           <div class="text-seeding pt-[15px]">
@@ -37,7 +40,12 @@ import ClaimButton from "../../../components/buttons/ClaimButton.vue";
           </div>
         </div>
         <div class="flex w-full px-[20px] pb-[20px]">
-          <ClaimButton/>
+          <ClaimButton>
+            <Timer :time="time" v-if="time"/>
+            <div class="text-claim" v-else>
+              Claim
+            </div>
+          </ClaimButton>
         </div>
       </div>
     </div>
@@ -70,5 +78,13 @@ import ClaimButton from "../../../components/buttons/ClaimButton.vue";
   text-align: center;
   color: #fff;
   text-shadow: 0 1px #000, 0 0 2px rgba(0, 0, 0, 0.4), 0 2px 3px rgba(0, 0, 0, 0.8);
+}
+.text-claim {
+  font: 400 14px "Press Start 2P", sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 3px #000, 0 0 2px rgba(0, 0, 0, 0.4), 0 1px #000, 0 1px #000, 0 2px 3px rgba(0, 0, 0, 0.8);
 }
 </style>
