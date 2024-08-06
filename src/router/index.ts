@@ -4,9 +4,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 const routes: RouteRecordRaw[] = [
     {
-        path: "/",
-        name: "home",
-        component: () => import("../pages/home/HomePage.vue"),
+        path: "/start",
+        name: "start",
+        component: () => import("../pages/start/StartPage.vue"),
     },
     {
         path: "/loading",
@@ -17,6 +17,11 @@ const routes: RouteRecordRaw[] = [
         path: "/approve",
         name: "approve",
         component: () => import("../pages/approve/ApprovePage.vue"),
+    },
+    {
+        path: "/",
+        name: "home",
+        component: () => import("../pages/home/HomePage.vue"),
     },
 ];
 
