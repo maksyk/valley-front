@@ -4,7 +4,7 @@ import RectangleRight from "../../components/svg/RectangleRight.vue";
 import TransitionBounce from "../../components/transitions/TransitionBounce.vue";
 import {ref} from "vue";
 import {sliders} from "./configs.ts";
-import PixelCarousel from "./PixelCarousel.vue";
+import PixelCarousel from "./components/PixelCarousel.vue";
 import MainButton from "../../components/buttons/MainButton.vue";
 
 let next = ref<number>(0);
