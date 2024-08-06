@@ -17,7 +17,6 @@ if (!DEBUG) {
     webApp.setHeaderColor('#3978A8');
     webApp.setBackgroundColor('#8AEBF1');
     webApp.isClosingConfirmationEnabled = true;
-    webApp.expand()
 } else {
     webApp = {
         initData: DEBUG_INIT_DATA,
