@@ -1,15 +1,22 @@
 <script setup lang="ts">
 import ProgressPar from "../../components/ProgressPar.vue";
 import {onMounted, ref} from "vue";
+import {useRouter} from "vue-router";
 
 let TIMER_LIMIT = ref<number>(100)
 let TIMER_VALUE = ref<number>(0)
+const router = useRouter()
 
 function setLoading() {
   const intervalId = setInterval(() => {
     TIMER_LIMIT.value -= 1
     TIMER_VALUE.value += 1
-    if (!TIMER_LIMIT.value) clearInterval(intervalId)
+    if (!TIMER_LIMIT.value) {
+      clearInterval(intervalId)
+      setTimeout(() => {
+        router.push({name: 'start'})
+      }, 500)
+    }
   }, 70)
 }
 onMounted(setLoading)
