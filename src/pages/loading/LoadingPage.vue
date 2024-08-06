@@ -32,7 +32,9 @@ onMounted(setLoading)
     <div class="text-loading mt-[40px] py-[7px]">
       LOADING
     </div>
-    <ProgressPar :value="TIMER_VALUE"/>
+    <div class="p-[10px]">
+      <ProgressPar :value="TIMER_VALUE"/>
+    </div>
     <div class="text-percentage py-[5px]">
       {{ TIMER_VALUE }}%
     </div>
